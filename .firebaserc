@@ -1,0 +1,19 @@
+{
+  "targets": {
+    "fantastidog-c9473": {
+      "hosting": {
+        "fd": [
+          "fantastidog-c9473"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fantastidog-c9473",
+    "fantastidog": "fantastidog1",
+    "fd": "fantastidog1",
+    "pro1": "fd1693",
+    "fd2": "fd1693",
+    "postres": "fantastidogpostres"
+  }
+}

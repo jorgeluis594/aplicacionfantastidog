@@ -1,0 +1,36 @@
+<div class="row row-cols-1 row-cols-md-4">
+    <div class="col mb-4" *ngFor="let card of listpedidos">
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body text-center">
+            <h5 class="card-title">{{card.nombremascota}}</h5>
+            <br>
+            <table class="table" style="background-color: #e3f2fd;">
+                <tbody>
+                    <tr>
+                        <td>Dueño</td>
+                        <td>{{card.nombredueno }}</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>{{card.nombremascota}}</td>
+                    </tr>
+                    <tr>
+                        <td>Pack</td>
+                        <td>{{card.pack}}</td>
+                    </tr>
+                    <tr>
+                        <td>Costo</td>
+                        <td>{{card.costo}}</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha Entrega</td>
+                        <td>{{card.fechaentrega.seconds * 1000 | date:'dd-MM'}} </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="#" class="btn btn-outline-success">Ver mas</a>
+        </div>
+        </div>
+</div> 

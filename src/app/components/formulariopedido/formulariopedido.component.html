@@ -1,0 +1,69 @@
+
+<div class="card my-5">
+    <div class="card-b">
+        <h3 class="card-title mx-auto">Ingregar pedido</h3>
+        <form class="formulario-registro py-4" [formGroup]="formulario" (ngSubmit)="guardarCambios()" novalidate="novalidate" >
+            <div class="row">
+
+                <mat-form-field class="col">
+                    <mat-label>Nombre Dueño</mat-label>
+                    <input matInput formControlName="nombredueno">
+                </mat-form-field>
+                <mat-form-field class="col">
+                    <mat-label>Nombre Mascota</mat-label>
+                    <input matInput formControlName="nombremascota">
+                </mat-form-field>
+            </div>
+            <div class="row">
+
+                <mat-form-field class="col">
+                    <mat-label>Pack</mat-label>
+                    <input matInput formControlName="pack">
+                </mat-form-field>
+                <mat-form-field class="col">
+                    <mat-label>Temática</mat-label>
+                    <input matInput formControlName="tematica">
+                </mat-form-field>
+            </div>
+            <div class="row">
+
+                <mat-form-field class="col">
+                    <mat-label>Sabor</mat-label>
+                    <input matInput formControlName="sabor">
+                </mat-form-field>
+                <mat-form-field class="col">
+                    <mat-label>Gorrito</mat-label>
+                    <input matInput formControlName="gorrito">
+                </mat-form-field>
+            </div>
+            <mat-form-field class="fw">
+                <mat-label>Diseño</mat-label>
+                <input matInput formControlName="diseno">
+            </mat-form-field>
+            <mat-form-field class="fw">
+                <mat-label>Observaciones</mat-label>
+                <textarea matInput formControlName="observaciones"></textarea>
+            </mat-form-field>
+            <div class="row">
+
+                <mat-form-field class="col">
+                    <mat-label>Costo</mat-label>
+                    <input matInput formControlName="costo">
+                </mat-form-field>
+
+                <mat-form-field class="col">
+                    <mat-label>Fecha entrega</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="fechaentrega">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+
+            </div>
+            <div class="row">
+
+                <button type="submit" class="btn btn-outline-success my-4 mx-auto">Ingresar Pedido</button>
+
+            </div>
+        </form>
+    </div>
+</div>
