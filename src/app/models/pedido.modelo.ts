@@ -1,3 +1,7 @@
+export interface Pago {
+  monto: number;
+  metodo: string;
+}
 export interface PedidoModel {
     nombredueno: string;
     nombremascota: string;
@@ -8,10 +12,10 @@ export interface PedidoModel {
     diseno: string;
     costo: number;
     estado: number;
-    fechapedido: Date;
-    fechaentrega: Date;
+    fechapedido: any;
+    fechaentrega: any;
     observaciones: string;
-    pago?: any[];
+    pagos?: Pago[];
     }
 
 export interface PedidoModelId extends PedidoModel {
